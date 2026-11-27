@@ -6,15 +6,11 @@ from odoo import _, fields, models
 class HelpdeskTicket(models.Model):
     _inherit = "helpdesk.ticket"
 
-    # Non-stored carrier for the note collected by the stage note wizard. It
-    # never creates a column: ``write`` pops it before the actual write.
     stage_note = fields.Text(
         store=False,
         readonly=True,
         help="Internal note posted together with the stage change.",
     )
-    # Stages of the team that ask for a note. The client reads it from the
-    # ticket to decide whether the wizard must be opened.
     stage_note_stage_ids = fields.Many2many(
         "helpdesk.stage",
         related="team_id.stage_note_stage_ids",
@@ -22,6 +18,10 @@ class HelpdeskTicket(models.Model):
     )
 
     def write(self, vals):
+        """
+        Posts a note after writing in the chatter if `stage_note` is part of 
+        vals (i.e. when set in the wizard) and the stage_id is changed.
+        """
         note = vals.pop("stage_note", False)
         stage_id = vals.get("stage_id")
         res = super().write(vals)

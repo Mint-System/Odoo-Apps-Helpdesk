@@ -4,13 +4,6 @@ from odoo import fields, models
 
 
 class HelpdeskTicketStageNoteWizard(models.TransientModel):
-    """Collect a chatter note that must accompany a stage change.
-
-    The wizard is passive: it only returns the note to the caller, which
-    writes it together with the new stage. It never writes the ticket, so a
-    cancelled wizard leaves the ticket untouched.
-    """
-
     _name = "helpdesk.ticket.stage.note.wizard"
     _description = "Helpdesk Ticket Stage Note Wizard"
 
