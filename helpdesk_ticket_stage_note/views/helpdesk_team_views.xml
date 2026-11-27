@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="helpdesk_team_view_form" model="ir.ui.view">
+        <field name="name">helpdesk_ticket_stage_note.helpdesk_team_view_form</field>
+        <field name="model">helpdesk.team</field>
+        <field name="inherit_id" ref="helpdesk.helpdesk_team_view_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//setting[@id='alias_channels']" position="after">
+                <setting
+                    id="stage_note"
+                    help="Ask for a note when a ticket is set to one of these stages"
+                >
+                    <field name="stage_note_stage_ids" widget="many2many_tags" />
+                </setting>
+            </xpath>
+        </field>
+    </record>
+</odoo>
