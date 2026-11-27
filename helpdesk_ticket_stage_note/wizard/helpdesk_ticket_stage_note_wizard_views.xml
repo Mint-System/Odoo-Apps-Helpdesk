@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="helpdesk_ticket_stage_note_wizard_view_form" model="ir.ui.view">
+        <field name="name">
+            helpdesk_ticket_stage_note.helpdesk_ticket_stage_note_wizard_view_form
+        </field>
+        <field name="model">helpdesk.ticket.stage.note.wizard</field>
+        <field name="arch" type="xml">
+            <form>
+                <field name="ticket_id" invisible="1" />
+                <field name="stage_id" invisible="1" />
+                <field
+                    name="note"
+                    placeholder="Why is the stage changing?"
+                    nolabel="1"
+                    colspan="2"
+                />
+            </form>
+        </field>
+    </record>
+</odoo>

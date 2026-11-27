@@ -1,0 +1,147 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* helpdesk_ticket_stage_note
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-26 14:45+0000\n"
+"PO-Revision-Date: 2026-11-26 14:45+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. module: helpdesk_ticket_stage_note
+#: model:ir.model.fields,field_description:helpdesk_ticket_stage_note.field_helpdesk_team__stage_note_stage_ids
+msgid "Ask for a Note"
+msgstr "Nachfrage nach Notiz"
+
+#. module: helpdesk_ticket_stage_note
+#: model_terms:ir.ui.view,arch_db:helpdesk_ticket_stage_note.helpdesk_team_view_form
+msgid "Ask for a note when a ticket is set to one of these stages"
+msgstr "Nach einer Notiz fragen, wenn ein Ticket auf eine dieser Phasen gesetzt wird"
+
+#. module: helpdesk_ticket_stage_note
+#: model:ir.model.fields,help:helpdesk_ticket_stage_note.field_helpdesk_team__stage_note_stage_ids
+msgid ""
+"Changing a ticket to one of these stages asks for a note that is posted to "
+"the chatter."
+msgstr "Beim Wechsel eines Tickets auf eine dieser Phasen wird eine Notiz verlangt, die im Chatter veröffentlicht wird."
+
+#. module: helpdesk_ticket_stage_note
+#: model:ir.model.fields,field_description:helpdesk_ticket_stage_note.field_helpdesk_ticket_stage_note_wizard__create_uid
+msgid "Created by"
+msgstr "Erstellt von"
+
+#. module: helpdesk_ticket_stage_note
+#: model:ir.model.fields,field_description:helpdesk_ticket_stage_note.field_helpdesk_ticket_stage_note_wizard__create_date
+msgid "Created on"
+msgstr "Erstellt am"
+
+#. module: helpdesk_ticket_stage_note
+#: model:ir.model.fields,field_description:helpdesk_ticket_stage_note.field_helpdesk_ticket_stage_note_wizard__display_name
+msgid "Display Name"
+msgstr "Anzeigename"
+
+#. module: helpdesk_ticket_stage_note
+#: model:ir.model,name:helpdesk_ticket_stage_note.model_helpdesk_team
+msgid "Helpdesk Team"
+msgstr "Kundendienstteam"
+
+#. module: helpdesk_ticket_stage_note
+#: model:ir.model,name:helpdesk_ticket_stage_note.model_helpdesk_ticket
+msgid "Helpdesk Ticket"
+msgstr "Kundendienstticket"
+
+#. module: helpdesk_ticket_stage_note
+#: model:ir.model,name:helpdesk_ticket_stage_note.model_helpdesk_ticket_stage_note_wizard
+msgid "Helpdesk Ticket Stage Note Wizard"
+msgstr "Assistent für Phasennotiz im Kundendienstticket"
+
+#. module: helpdesk_ticket_stage_note
+#: model:ir.model.fields,field_description:helpdesk_ticket_stage_note.field_helpdesk_ticket_stage_note_wizard__id
+msgid "ID"
+msgstr "ID"
+
+#. module: helpdesk_ticket_stage_note
+#: model:ir.model.fields,help:helpdesk_ticket_stage_note.field_helpdesk_ticket__stage_note
+msgid "Internal note posted together with the stage change."
+msgstr "Interne Notiz, die zusammen mit dem Phasenwechsel veröffentlicht wird."
+
+#. module: helpdesk_ticket_stage_note
+#: model:ir.model.fields,field_description:helpdesk_ticket_stage_note.field_helpdesk_ticket_stage_note_wizard__write_uid
+msgid "Last Updated by"
+msgstr "Zuletzt aktualisiert von"
+
+#. module: helpdesk_ticket_stage_note
+#: model:ir.model.fields,field_description:helpdesk_ticket_stage_note.field_helpdesk_ticket_stage_note_wizard__write_date
+msgid "Last Updated on"
+msgstr "Zuletzt aktualisiert am"
+
+#. module: helpdesk_ticket_stage_note
+#: model:ir.model.fields,field_description:helpdesk_ticket_stage_note.field_helpdesk_ticket_stage_note_wizard__stage_id
+msgid "New Stage"
+msgstr "Neue Phase"
+
+#. module: helpdesk_ticket_stage_note
+#: model:ir.model.fields,field_description:helpdesk_ticket_stage_note.field_helpdesk_ticket_stage_note_wizard__note
+msgid "Note"
+msgstr "Notiz"
+
+#. module: helpdesk_ticket_stage_note
+#: model:ir.model.fields,help:helpdesk_ticket_stage_note.field_helpdesk_ticket_stage_note_wizard__note
+msgid "Note posted to the ticket chatter."
+msgstr "Notiz, die im Chatter des Tickets veröffentlicht wird."
+
+#. module: helpdesk_ticket_stage_note
+#. odoo-javascript
+#: code:addons/helpdesk_ticket_stage_note/static/src/js/stage_note_dialog.js:0
+#, python-format
+msgid "Reason for setting stage to %s"
+msgstr "Begründung für den Wechsel der Phase zu %s"
+
+#. module: helpdesk_ticket_stage_note
+#: model:ir.model.fields,field_description:helpdesk_ticket_stage_note.field_helpdesk_ticket__stage_note
+msgid "Stage Note"
+msgstr "Phasennotiz"
+
+#. module: helpdesk_ticket_stage_note
+#: model:ir.model.fields,field_description:helpdesk_ticket_stage_note.field_helpdesk_ticket__stage_note_stage_ids
+msgid "Stage Note Stage"
+msgstr "Phase für Phasennotiz"
+
+#. module: helpdesk_ticket_stage_note
+#. odoo-python
+#: code:addons/helpdesk_ticket_stage_note/models/helpdesk_ticket.py:0
+#, python-format
+msgid ""
+"Stage changed to %(stage)s with note:\n"
+"%(note)s"
+msgstr ""
+"Phase geändert zu %(stage)s mit Notiz:\n"
+"%(note)s"
+
+#. module: helpdesk_ticket_stage_note
+#: model:ir.model.fields,help:helpdesk_ticket_stage_note.field_helpdesk_ticket_stage_note_wizard__stage_id
+msgid "Stage the ticket is moved to."
+msgstr "Phase, in die das Ticket verschoben wird."
+
+#. module: helpdesk_ticket_stage_note
+#: model:ir.model.fields,help:helpdesk_ticket_stage_note.field_helpdesk_ticket__stage_note_stage_ids
+msgid "Stages of the team that ask for a note."
+msgstr "Phasen des Teams, die eine Notiz verlangen."
+
+#. module: helpdesk_ticket_stage_note
+#: model:ir.model.fields,field_description:helpdesk_ticket_stage_note.field_helpdesk_ticket_stage_note_wizard__ticket_id
+msgid "Ticket"
+msgstr "Ticket"
+
+#. module: helpdesk_ticket_stage_note
+#: model_terms:ir.ui.view,arch_db:helpdesk_ticket_stage_note.helpdesk_ticket_stage_note_wizard_view_form
+msgid "Why is the stage changing?"
+msgstr "Warum wird die Phase geändert?"

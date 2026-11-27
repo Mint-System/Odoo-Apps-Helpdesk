@@ -1,0 +1,7 @@
+- Go to a helpdesk team configuration.
+- Set a stage in the "stage note" settings.
+- In the ticket Kanban view, drag a ticket to the stage in the settings.
+- Write a text in the dialog and confirm that it is posted when accepted.
+- Drag the ticket away and back into the stage.
+- Confirm that the Ticket is moved back to its original stage when discarding the dialog.
+- Open the ticket in form view, change the state and confirm the same behaviour as dragging in the kanban view.
