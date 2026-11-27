@@ -1,0 +1,2 @@
+- Open a helpdesk ticket.
+- The tab 'Change Management' should be visible with fields inside.
